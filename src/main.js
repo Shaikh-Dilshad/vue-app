@@ -9,6 +9,7 @@ require("../src/store/subscribe");
 require("./mixin.js");
 require("./axios.js");
 
+
 Vue.config.productionTip = false;
 store.dispatch('auth/attempt' , localStorage.getItem('token')).then(() => {
   new Vue({
